@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Fractal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="canvas1" id="canvas1"> </canvas>
+    <div class="controls">
+      <button id="randomBtn" class="randomBtn">Randomize</button>
+      <div>
+        <label id="spreadLabel" class="spreadLabel" for="spreadSlider">
+          Spread</label
+        >
+        <input
+          id="spreadSlider"
+          class="spreadSlider"
+          type="range"
+          min="0.1"
+          max="3.1"
+          value="1"
+          step="0.1"
+        />
+      </div>
+
+      <div>
+        <label id="sideLabel" class="sideLabel" for="sideSlider">
+          Sides:
+        </label>
+        <input
+          id="sideSlider"
+          class="sideSlider"
+          type="range"
+          min="2"
+          max="15"
+          value="5"
+          step="1"
+        />
+      </div>
+
+      <div>
+        <label id="widthLabel" class="widthLabel" for="widthSlider">
+          Line Width:
+        </label>
+        <input
+          id="widthSlider"
+          class="widthSlider"
+          type="range"
+          min="2"
+          max="30"
+          value="10"
+          step="1"
+        />
+      </div>
+      <button id="resetBtn" class="resetBtn">Reset</button>
+    </div>
+
+    <script src="utilities.js"></script>
+    <script src="vector.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
